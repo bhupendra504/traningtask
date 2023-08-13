@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        .link-get {
+            margin-top: 20px;
+        }
+
+        .nav-link {
+            background-color: cornflowerblue;
+        }
+
+        .carousel-inner {
+            padding: 1em;
+        }
+
+        .card {
+            margin: 0 0.5em;
+
+            border: none;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: #e1e1e1;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+
+        .card .img-wrapper {
+            max-width: 100%;
+            height: 13em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card img {
+            max-height: 100%;
+        }
+
+        @media (max-width: 767px) {
+            .card .img-wrapper {
+                height: 17em;
+            }
+        }
+
+        .carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .u-d-flex {
+    -js-display: flex;
+    display: flex;
+}
+
+  .u-m-t--25 {
+    margin-top: 25px !important;
+  }
+
+  .u-d-flex--hc {
+    justify-content: center;
+  }
+
+  .u-d-flex {
+    -js-display: flex;
+    display: flex;
+  }
+  .text-epsilon {
+    font-size: 14px;
+}
+.u-shape--cir {
+    border-radius: 50%;
+}
+.u-d-flex--column {
+    flex-direction: column;
+}
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="section-nav2">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <!-- <form class="form-inline my-5 my-lg-0 mr-auto">
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <button class="btn" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <input class="form-control" type="search"placeholder="Search for medicines,health product and more" aria-label="Search">
+                    </div>
+                </form> -->
+                <div class="input-group">
+                    <!-- Search Bar -->
+                    <div class="input-group-append">
+                        <span class="input-group-text pt-3">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search for medicines,health product and more"
+                        aria-label="Search" style="width:0px;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><i class="fas fa-shopping-cart"> View Cart</i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <br>
+
+    <!-- box-1 -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="full-width-1.webp" class="d-block w-100" alt="..." style="background-color: #e7f1f7;">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="full-width-2.webp" class="d-block w-100" alt="..."
+                    style="background-color: rgb(247, 232, 230);">
+            </div>
+            <div class="carousel-item">
+                <img src="full-width-3.webp" class="d-block w-100" alt="..."
+                    style="background-color: rgb(228, 242, 235);">
+            </div>
+            <div class="carousel-item">
+                <img src="full-width-4.webp" class="d-block w-100" alt="..."
+                    style="background-color: rgb(238, 235, 248);">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Box-2 -->
+    <div class="container">
+        <div class="section-header">
+            <h3>Browse medicines & health products</h3>
+
+        </div>
+        <div id="carouselExampleControls1" class="carousel" data-bs-ride="carousel">
+            <p>Health condition</p>
+            <div class="carousel-inner" style="display: flex;">
+
+                <div class="carousel-item active" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="SkinCare.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="Sexual.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="weighl.webp" class="d-block w-100" alt="...">
+                        </div></a>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="pain.webp" class="d-block w-100" alt="..."> </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="Heart.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="coughwebp.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="diabetes.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Box-3 -->
+
+    <div class="container">
+
+        <div id="carouselExampleControls2" class="carousel" data-bs-ride="carousel">
+            <p>Categories</p>
+            <div class="carousel-inner" style=" display: flex;">
+
+                <div class="carousel-item active" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="1baby.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="2fitness.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="3Family.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="4Alternate.webp" class="d-block w-100" alt="..."> </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="5Women's.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="6Health.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="7Personal.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="8Devices.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 25.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"> <img src="9Daily.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Box-4 -->
+
+    <div class="container">
+
+        <div id="carouselExampleControls3" class="carousel" data-bs-ride="carousel">
+            <p>Popular Products</p>
+            <div class="carousel-inner" style=" display: flex;">
+
+                <div class="carousel-item active" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="boost-powder-500gm.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> BOOST-POWDER-500gm</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>295.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="moov-spray-80gm.webp" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">MOOV-SPRAY-80GM</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>179.00</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="zincovit-tablet.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> ZINCOVIT-TABLET</h5>
+                            <P>COVID_ESSENTIALS-15'S</P>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>105.00</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="volini-spray-60ml.webp" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">VOLINI SPRAY 60ml</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>208.00</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="shelcal-500mg-tablet-15-s.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> SHELCAL 500mg TABLET 15'S</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>131.30</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="prega-news-card-1-s.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">PREGA NEWS CARD 1'S</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>60.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="becosules-capsule-20-s.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> BECOSULES CAPSULE 20'S</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>50.25</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="supradyn-daily-tablet-15-s.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SUPRADYN DAILY TABLET 15'S</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>54.90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="hairbless-tablet-10-s.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> HAIRBLESS TABLLRT 10'S</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>225.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="vicks-vaporub-10gm.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> VICKS VAPORUB 10GM</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>45.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="nan-pro-2-refill-400gm.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> NAN PRO 2 REFILL 400GM</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>785.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="electral-powder-21.webp" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> ELECTRAL POWDER</h5>
+                            <P>Covid_essintials 21.8mg</P>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>24.35</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <a href="#"><img src="dettol-antiseptic-liquid-250ml.jpeg" class="d-block w-100"
+                                    alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> DETTOL ANTISEPTIC LIQUID 250ML</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>127.77</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+
+                            <a href="#"><img src="dabur-honey-500gm.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> DABUR HONEY-500GM</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>240.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style=" margin-right: 0; flex: 0 0 20.333333%; display: block;">
+                    <div class="card">
+                        <div class="img-wrapper">
+
+                            <a href="#"><img src="pediasure-chocolate-1kg.jpeg" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> PEDIASURE CHOCOLATE 1KG</h5>
+                            <span><i class="fa-solid fa-indian-rupee-sign"></i>1785.00</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card" style="border: none;">
+                            <div class="card-body">
+                                <p class="card-title" style="color: blue;">INTRODUCING CONSULTATION DESK</p>
+                                <h5 class="card-text">Don’t self medicate. Talk to an expert. Consult a doctor in less
+                                    than
+                                    2 minutes.</h5>
+                                <a href="#"> <img src="mar-card-1.webp" style="height: 80%;width: 100%;"></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card" style="border: none;">
+                            <div class="card-body">
+                                <p class="card-title" style="color: blue;">INTRODUCING FAST DELIVERY</p>
+                                <h5 class="card-text">Tired of waiting in a queue? Too weak to go down and buy
+                                    medicines?
+                                </h5>
+                                <a href="#"> <img src="mar-card-2.5a0b85e1.png" style="height: 80%;width: 100%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+
+    </div>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="full-width-41.webp" class="d-block w-100" alt="..." style="background-color: #e7f1f7;">
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-light>
+
+        <div class="container mt-5">
+          <h3 class="text-center p-1">What our users have to say</h3>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+                class="active bg-black" aria-current="true" aria-label="Slide 1"></button>
+              <button class="active bg-black" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button class="active bg-black" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button class="active bg-black" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button class="active bg-black" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="4" aria-label="Slide 5"></button>
+    
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="px-5 pt-2 d-flex justify-content-center">
+                  <div class="w-75"
+                    style="background-image:url('white.jpg');height: 260px; width: 100%;"
+                    class="">
+                    <h4 class="heading" style="text-align: center;padding-top: 40px;">"Beautiful application with elegant UI
+                      Design. I found this app very useful. Placed Order for a few medicines and recieved in just two days.
+                      Same medicine costs me +100 from local Shop. Recommended application."</h4>
+                      <div class="user-wrapper u-m-t--25 u-d-flex u-d-flex--hc">
+                      <div class="u-d-flex">
+                      <img src="Ayush verma.9e5212dc.jpg" class="u-shape--cir">
+                      <div class="u-d-flex u-d-flex--column u-m-l--15 u-d-flex--bl">
+                
+                        <div class="text-charcoal-grey u-text--bold text-epsilon">Ayush Verma</div>
+                        <div class="text-cool-grey-two text-epsilon">Oct 5, 2018 at 11:33 AM</div>
+                      </div>
+                    </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="px-5 pt-2 d-flex justify-content-center">
+                  <div class="w-75"
+                    style="background-image:url('white.jpg');height: 250px; width: 100%;"
+                    class="">
+                    <h4 class="heading" style="text-align: center;padding-top: 40px;">"Very useful app. It saves time and
+                      money and genuine. Keep going Practo. Thank you."</h4>
+                      <div class="user-wrapper u-m-t--25 u-d-flex u-d-flex--hc">
+                        <div class="u-d-flex">
+                        <img src="Rakesh raki.07a22a47.jpg" class="u-shape--cir">
+                        <div class="u-d-flex u-d-flex--column u-m-l--15 u-d-flex--bl">
+    
+                          <div class="text-charcoal-grey u-text--bold text-epsilon">Rakesh Raki </div>
+                          <div class="text-cool-grey-two text-epsilon">Nov 11, 2018 at 11:27 AM</div>
+                        </div>
+                      </div>
+                      </div>
+    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="px-5 pt-2 d-flex justify-content-center">
+                  <div class="w-75"
+                    style="background-image:url('white.jpg');height: 250px; width: 100%;"
+                    class="">
+                    <h4 class="heading" style="text-align: center;padding-top: 40px;">Most useful and saving more money on
+                      medicine.</h4>
+                      <div class="user-wrapper u-m-t--25 u-d-flex u-d-flex--hc">
+                        <div class="u-d-flex">
+                        <img src="vamshi krishna.jpg" class="u-shape--cir">
+                        <div class="u-d-flex u-d-flex--column u-m-l--15 u-d-flex--bl">
+                  
+                          <div class="text-charcoal-grey u-text--bold text-epsilon">Vamshi krishna </div>
+                          <div class="text-cool-grey-two text-epsilon">Oct 3, 2018 at 7:13 PM</div>
+                        </div>
+                      </div>
+                      </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="px-5 pt-2 d-flex justify-content-center">
+                  <div class="w-75"
+                    style="background-image:url('white.jpg');height: 250px; width: 100%;"
+                    class="">
+                    <h4 class="heading" style="text-align: center;padding-top: 40px;">Nice app for people who want to manage
+                      time for searching medicine.</h4>
+                      <div class="user-wrapper u-m-t--25 u-d-flex u-d-flex--hc">
+                        <div class="u-d-flex">
+                        <img src="kishor jha.jpg" class="u-shape--cir">
+                        <div class="u-d-flex u-d-flex--column u-m-l--15 u-d-flex--bl">
+                  
+                          <div class="text-charcoal-grey u-text--bold text-epsilon">kishor jho </div>
+                          <div class="text-cool-grey-two text-epsilon">Sep 1, 2018 at 8:52 PM</div>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="px-5 pt-2 d-flex justify-content-center">
+                  <div class="w-75 "
+                    style="background-image:url('white.jpg');height: 250px; width: 100%;">
+                    <h4 class="heading" style="text-align: center;padding-top: 40px;">I ordered medicine. It was delivered
+                      right time. With big discount.</h4>
+                      <div class="user-wrapper u-m-t--25 u-d-flex u-d-flex--hc">
+                        <div class="u-d-flex">
+                        <img src="mahesh sisara.jpg" class="u-shape--cir">
+                        <div class="u-d-flex u-d-flex--column u-m-l--15 u-d-flex--bl">
+                  
+                          <div class="text-charcoal-grey u-text--bold text-epsilon">Mahesh Sisara </div>
+                          <div class="text-cool-grey-two text-epsilon">Sep 26, 2018 at 4:56 PM</div>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- Downlond App Link -->
+    <div class="link-get">
+        <div class="container">
+            <div class="card mb-3" style="max-width: 1300px;border: none;">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <img src="app-banner@2x.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h1 class="card-title">Download the Practo app</h1>
+                            <p class="card-text">Book appointments, Order health products, Consult with a doctor
+                                online,
+                                Book health chekups, store health records & read health tips.
+                            </p>
+                            <h5 class="get-link">Send the link to download the app
+                            </h5>
+                            <form onsubmit="return myfun()">
+                                <span>+91</span>
+                                <input type="text" id="phoneNumber" placeholder="Enter phone number...">
+                                <span id="message"></span>
+                                <br><br>
+                                <button id="searchButton" style="background-color:darkturquoise;">SendMsg</button>
+                            </form>
+
+
+                        </div>
+                        <div class="button-both">
+                            <a class="btn  btn-dark"
+                                href="https://play.google.com/store/apps/details?id=com.practo.fabric&referrer=af_tranid%3DBs54iHG3b8bJqzQy3K-cKA%26c%3Dhomepage%26pid%3Dweb"
+                                role="button"><i class="fa-brands fa-google-play"></i> Google play</a>
+
+                            <a class="btn  btn-dark" href="https://apps.apple.com/IN/app/id953772015?mt=8"
+                                role="button"><i class="fa-brands fa-apple"></i> App
+                                Store</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ParaGragh link -->
+    <div class="section-para">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card" style="border: none;">
+                        <div class="card-body" id="paragraph">
+                            <h5 class="card-text">Order Medicines & Health Products Online : India's most reliable
+                                Online Medical Store</h5>
+                            <p>Find and buy medicines online with Practo Pharmacy. Browse through
+                                prescription medicines, OTC products, health & wellness products on an online
+                                pharmacy.
+                                that provides hassle free service across 100+ cities in India With an extensive
+                                catalogue of medicines and healthcare products provided on an extensive and easy to
+                                navigate destination for online medicine shopping, Practo Pharmacy provides added
+                                advantages which include</p>
+
+                            <ul>
+                                <li>Automated prescription refill: Set up scheduled refills for your online medicine
+                                    orders and never worry about running out of your meds</li>
+                                <li>Doorstep delivery: No more trips to the pharmacy, with on-time delivery of your
+                                    medicines right to your doorstep</li>
+                                <li>Medicine order history: No more scrolling through pages to find what you need.
+                                    Just
+                                    check your medicine order history and re-order</li>
+                                <li>Exclusive offers and discounts: Enjoy cashbacks, flat discounts and other
+                                    exclusive
+                                    offers on your medicine orders</li>
+                            </ul>
+                            <!-- <button class="btn btn-primary" id="seeMoreBtn" onclick="seeMore()">See More</button> -->
+
+                            <h5>Get every medicine on time & everytime:</h5>
+                            <p>When you purchase medicines on Practo, you can be assured that you will get the
+                                medicines
+                                you order. Our trained pharmacists, partner pharmacies and medical stores ensure
+                                that
+                                your medicines are delivered to you on time, anywhere in India*. Practo is powered
+                                by
+                                intelligent systems that remembers all the medicines you ordered online and makes
+                                sure
+                                they're always available whenever you need them. So, you'll always find your
+                                medicines
+                                on Practo's online pharmacy, anywhere in India*</p>
+
+                            <br>
+
+                            <h5>Buy Personal Care Products:</h5>
+                            <p>Giving your body the care it needs just got a whole lot simple. Choose from an
+                                extensive
+                                list of personal care products that includes top brands like Pantene, Himalaya,
+                                Neutrogena, Brylcreem, Durex and Karmasutra. Find products for skin care, hair care
+                                and
+                                lip care, as well as products for more intimate purposes like sexual wellness.</p>
+                            <h5>Buy Health Devices & Surgical Supplies:</h5>
+                            <p>Good healthcare begins at home. Keep your first-aid kits stocked with thermometer,
+                                bandages, antiseptic solutions, mosquito repellent and other essential medical
+                                equipment
+                                such as health monitors and weighing scales.</p>
+                            <h5>Buy Ayurvedic Medicines:</h5>
+                            <p>Searching for ayurvedic medicines? Avail the benefits of traditional medicine created
+                                right here in India, with products formulated for stomach care, liver care, sexual
+                                wellness and more</p>
+                            <h5>Practo provides services to the following cities:</h5>
+                            <p>Bengaluru,<span id="dots"></span>
+                                <span id="more"> New Delhi Mumbai, Thane, Kolkata, Hyderabad, Chennai, Pune,
+                                    Ahmedabad,
+                                    Gurgaon, Ghaziabad, Noida, Faridabad, Mysuru, Hubli, Mandya, Mangaluru,
+                                    Chitradurga,
+                                    Dharwad, Chickmagalur, Belgavi, Badami, Gadag, Dandeli, Udupi, Dharmasthala,
+                                    Bhadravati,
+                                    Ranebennur, Hampi, Davangere, Hassan, Kodagu, Raichur, Vijaypura, Kalaburagi,
+                                    Shimoga,
+                                    Bagalkot, Kochi, Coimbatore, Jaipur, Chandigarh, Jalandhar, Lucknow, Bhopal,
+                                    Bhubaneshwar, Dehradun, Indore, Nagpur, Amritsar, Ludhiana, Agra, Allahabad,
+                                    Anakapalli,
+                                    Aurangabad, Bheemavaram, Bhilai, Bidar, Bilaspur, Chikkaballapur, Chittoor,
+                                    Cuddallore,
+                                    Cuttack, Dombivli, Goa, Guntur, Guwahati, Jaisalmer, Jodhpur, Kadapa, Kakinada,
+                                    Kalyan,
+                                    Kamareddy, Kancheepuram, Kanpur, Karimnagar, Khammam, Kolar, Kota, Kurnool,
+                                    Ludhiana,
+                                    Madanapalli, Madurai, Mahaboobnagar, Meerut, Nalgonda, Nashik, Navi Mumbai,
+                                    Nellore,
+                                    Nizamabad, Panchkula, Panipat, Patna, Pimpri-Chinchwad, Pondy, Raipur,
+                                    Rajahmundry,
+                                    Rajkot, Ramanagara, Ranchi, Rourkela, Salem, Secunderabad, Shimla, Silliguri,
+                                    Srikakulam, Srikalahasti, Srinagar, Surat, Suryapeta, Thiruvananthapuram,
+                                    Tirupati,
+                                    Trichy, Tumakuru, Udaipur, Vadodara, Varanasi, Vasai, Vellore, Vijayawada,
+                                    Visakhapatnam, Vizianagaram, Warangal.</span>
+
+                            </p>
+                            <button onclick="myFunction()" id="myBtn">Read more</button>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+    //  parameter link seemore
+
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
+
+    // downlond link send
+    function myfun() {
+        var a = document.getElementById("phoneNumber").value;
+        if (a.length !== 10) {
+            document.getElementById("message").innerHTML = "";
+            return false;
+        }
+
+        if (a.length <= 10) {
+            document.getElementById("message").innerHTML = "App downlond Link Send";
+            return false;
+        }
+    }
+
+    //project carusal
+    var multipleCardCarousel = document.querySelector(
+        "#carouselExampleControls1"
+    );
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+            interval: false,
+        });
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+        var scrollPosition = 0;
+        $("#carouselExampleControls .carousel-control-next").on("click", function () {
+            if (scrollPosition < carouselWidth - cardWidth * 4) {
+                scrollPosition += cardWidth;
+                $("#carouselExampleControls .carousel-inner").animate(
+                    { scrollLeft: scrollPosition },
+                    600
+                );
+            }
+        });
+        $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+            if (scrollPosition > 0) {
+                scrollPosition -= cardWidth;
+                $("#carouselExampleControls .carousel-inner").animate(
+                    { scrollLeft: scrollPosition },
+                    600
+                );
+            }
+        });
+    } else {
+        $(multipleCardCarousel).addClass("slide");
+    }
+
+
+
+    var multipleCardCarousel = document.querySelector(
+        "#carouselExampleControls2"
+    );
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+            interval: false,
+        });
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+        var scrollPosition = 0;
+        $("#carouselExampleControls .carousel-control-next").on("click", function () {
+            if (scrollPosition < carouselWidth - cardWidth * 4) {
+                scrollPosition += cardWidth;
+                $("#carouselExampleControls .carousel-inner").animate(
+                    { scrollLeft: scrollPosition },
+                    600
+                );
+            }
+        });
+        $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+            if (scrollPosition > 0) {
+                scrollPosition -= cardWidth;
+                $("#carouselExampleControls .carousel-inner").animate(
+                    { scrollLeft: scrollPosition },
+                    600
+                );
+            }
+        });
+    } else {
+        $(multipleCardCarousel).addClass("slide");
+    }
+
+    var multipleCardCarousel = document.querySelector(
+        "#carouselExampleControls3"
+    );
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+            interval: false,
+        });
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+        var scrollPosition = 0;
+        $("#carouselExampleControls .carousel-control-next").on("click", function () {
+            if (scrollPosition < carouselWidth - cardWidth * 4) {
+                scrollPosition += cardWidth;
+                $("#carouselExampleControls .carousel-inner").animate(
+                    { scrollLeft: scrollPosition },
+                    600
+                );
+            }
+        });
+        $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+            if (scrollPosition > 0) {
+                scrollPosition -= cardWidth;
+                $("#carouselExampleControls .carousel-inner").animate(
+                    { scrollLeft: scrollPosition },
+                    600
+                );
+            }
+        });
+    } else {
+        $(multipleCardCarousel).addClass("slide");
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        var multipleCardCarousel = document.querySelector("#carouselExampleControls");
+
+        // Check if the carousel should be initialized based on the screen size
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+                interval: false,
+            });
+
+            // Calculate carousel and card width for scrolling
+            var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+            var cardWidth = $(".carousel-item").width();
+            var scrollPosition = 0;
+
+            // Next button click event
+            $("#carouselExampleControls .carousel-control-next").on("click", function () {
+                if (scrollPosition < carouselWidth - cardWidth * 4) {
+                    scrollPosition += cardWidth;
+                    $("#carouselExampleControls .carousel-inner").animate(
+                        { scrollLeft: scrollPosition },
+                        600
+                    );
+                }
+            });
+
+            // Previous button click event
+            $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+                if (scrollPosition > 0) {
+                    scrollPosition -= cardWidth;
+                    $("#carouselExampleControls .carousel-inner").animate(
+                        { scrollLeft: scrollPosition },
+                        600
+                    );
+                }
+            });
+        } else {
+            // For small screens, add the "slide" class to enable the default carousel behavior
+            $(multipleCardCarousel).addClass("slide");
+        }
+    });
+
+</script>
+
+
+
+
+
+</script>
+
+</html>
